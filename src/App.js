@@ -122,6 +122,10 @@ const App = () => {
 
   useEffect(() => {
 
+    
+
+
+
       const init = async() => {
 
         const web3 = await getWeb3();

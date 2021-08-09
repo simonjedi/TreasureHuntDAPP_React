@@ -1,7 +1,13 @@
 .background {
     /* The image used */
-    background-image: url(./treasure1.jpg);
-    background-attachment: fixed;
+    /* background-image: url(./treasure1.jpg); */
+    background: url(./treasureblox_background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* background-attachment: fixed; */
     /* Full height */
     width: 100vw;
     height: 100%;
@@ -14,4 +20,8 @@
 
 .customFont{
   font-family: 'Bangers', cursive;
+}
+
+.spaceTopHome{
+  margin-top: 100px;
 }

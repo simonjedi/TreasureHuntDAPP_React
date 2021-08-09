@@ -1,10 +1,5 @@
 [
 	{
-		"inputs": [],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
 		"anonymous": false,
 		"inputs": [
 			{
@@ -30,54 +25,6 @@
 		"type": "event"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "spender",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			}
-		],
-		"name": "approve",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_name",
-				"type": "string"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_thisId",
-				"type": "uint256"
-			}
-		],
-		"name": "Attempt",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
 		"anonymous": false,
 		"inputs": [
 			{
@@ -101,121 +48,6 @@
 		],
 		"name": "AttemptEvent",
 		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "spender",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "subtractedValue",
-				"type": "uint256"
-			}
-		],
-		"name": "decreaseAllowance",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "spender",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "addedValue",
-				"type": "uint256"
-			}
-		],
-		"name": "increaseAllowance",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_treasureGameid",
-				"type": "uint256"
-			}
-		],
-		"name": "makePaymentForSecret",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_gameId",
-				"type": "uint256"
-			},
-			{
-				"internalType": "bool",
-				"name": "_live",
-				"type": "bool"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_prize",
-				"type": "uint256"
-			},
-			{
-				"internalType": "bytes32",
-				"name": "_submitQuestionHash",
-				"type": "bytes32"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_costToEnter",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_submitSecretCost",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "_riddle",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_clue",
-				"type": "string"
-			}
-		],
-		"name": "setTreasureHuntGame",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
 	},
 	{
 		"anonymous": false,
@@ -266,40 +98,6 @@
 		],
 		"name": "setGameEvent",
 		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "hashedConfirm",
-				"type": "bytes32"
-			},
-			{
-				"internalType": "string",
-				"name": "_answer",
-				"type": "string"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_treasureGameid",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "_winningMessage",
-				"type": "string"
-			}
-		],
-		"name": "SubmitSecret",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
 	},
 	{
 		"anonymous": false,
@@ -355,6 +153,200 @@
 		"inputs": [
 			{
 				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "approve",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "subtractedValue",
+				"type": "uint256"
+			}
+		],
+		"name": "decreaseAllowance",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_gameId",
+				"type": "uint256"
+			}
+		],
+		"name": "enterGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_thisId",
+				"type": "uint256"
+			}
+		],
+		"name": "headStartTimeLock",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "addedValue",
+				"type": "uint256"
+			}
+		],
+		"name": "increaseAllowance",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_gameId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_live",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_prize",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_submitQuestionHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_costToEnter",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_submitSecretCost",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_riddle",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_clue",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_headStartTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_entryLimit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_entryCost",
+				"type": "uint256"
+			}
+		],
+		"name": "setTreasureHuntGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "hashedConfirm",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "_answer",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_treasureGameid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_winningMessage",
+				"type": "string"
+			}
+		],
+		"name": "SubmitSecret",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
 				"name": "_recipient",
 				"type": "address"
 			},
@@ -403,6 +395,11 @@
 		],
 		"stateMutability": "nonpayable",
 		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
 	},
 	{
 		"inputs": [],
@@ -574,6 +571,21 @@
 				"internalType": "string",
 				"name": "clue",
 				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "headStartTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "entryLimit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "entryCost",
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",
@@ -626,6 +638,45 @@
 		"type": "function"
 	},
 	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "huntEntries",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "huntId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "entered",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "headStartTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "gameLive",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [],
 		"name": "isOwner",
 		"outputs": [
@@ -672,6 +723,25 @@
 				"internalType": "string",
 				"name": "",
 				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "numberOfEntries",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",

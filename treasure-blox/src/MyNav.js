@@ -3,28 +3,51 @@ import React, {useState} from 'react'
 import { Button,Container,Nav,Navbar,NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MyNav.css';
-
 import Connection from "./Connection";
 import App from "./App";
 
+import Hunt1 from "./Hunt1";
 
+import logo from './TreasureBlox_Logo.png';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 const MyNav = (props) => {
-
-
 
   return(
 
     <Navbar collapseOnSelect className="fixed-top MyBakground" expand="lg" variant="dark">
       <Container>
-      <Navbar.Brand href="#home">In Nav.js</Navbar.Brand>
+
+      <Link className='customLinks' to="/home">
+      <Navbar.Brand>
+       <img
+         alt="treasureblox_logo"
+         src={logo}
+         width="225"
+         className="d-inline-block align-middle"
+       />
+     </Navbar.Brand>
+     </Link>
+
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#features">{props.accounts}</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Link className='customLinks' to="/home">
+          Home
+          </Link>
+          <Link className='customLinks' to="/hunt1">
+          Elon's Rocket
+          </Link>
+          <Link className='customLinks' to="/hunt2">
+          Fort Blox
+          </Link>
           <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -32,12 +55,9 @@ const MyNav = (props) => {
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
           </NavDropdown>
+
         </Nav>
         <Nav className="ml-auto">
-          <Nav.Link href="#deets">More deets</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
-            Dank memes
-          </Nav.Link>
 
           <Connection accounts={props.accounts}/>
 
@@ -45,6 +65,7 @@ const MyNav = (props) => {
       </Navbar.Collapse>
       </Container>
     </Navbar>
+
 
 
   );

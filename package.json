@@ -1,5 +1,5 @@
 {
-  "hompage":"https://simonjedi.github.io/TreasureHuntDAPP_React/",
+  "hompage": "https://simonjedi.github.io/TreasureHuntDAPP_React/",
   "name": "treasure-blox",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +21,7 @@
     "react-countdown": "^2.3.2",
     "react-dom": "^16.2.0",
     "react-iframe": "^1.8.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-tiktok-embed": "^1.0.0",
     "react-use-window-size": "^1.0.1",
